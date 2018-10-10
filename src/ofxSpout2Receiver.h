@@ -9,6 +9,7 @@ namespace ofxSpout2 {
 		Receiver();
 
 		void setup();
+		bool isInitialized() { return mbInitialized; }
 
 		// show the panel for possible senders and select one
 		void showSenders();
@@ -23,7 +24,7 @@ namespace ofxSpout2 {
 
 	private:
 		SpoutReceiver *mReceiver;
-		bool mbInitialized; ;
+		bool mbInitialized;
 		char SenderName[256];
 		ofTexture mTexture;
 	};
